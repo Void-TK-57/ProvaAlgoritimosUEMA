@@ -1,10 +1,26 @@
 #include <iostream>
 
-#include "bicleta.h"
+#include "bicicleta.h"
 #include "cliente.h"
 #include "venda.h"
+#include "vbsys.h"
 
-main() {
-	cout << "aefnkfjfbf aefnkfjfbf aefnkfjfbf" << endl;
+/*
+Cadastrar
+Consultar Estoque
+Vender
+Consultar a bicileta que mais for vendida 
+Consultar Historico
+*/
+
+
+
+int main() {
+	Cliente a;
+	Venda b;
+	Bicicleta c;
+	std::cout << "Hello World" << std::endl;
 	return 0;
 }
+
+

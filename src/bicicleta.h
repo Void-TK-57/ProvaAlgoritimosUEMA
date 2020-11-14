@@ -1,11 +1,11 @@
 #ifndef _BICICLETA_H_
 #define _BICICLETA_H_
 
-struct Bicicleta {
+typedef struct {
 	int codigo;
 	const char* marca;
 	const char* modelo;
 	double valor;
-}
+} Bicicleta;
 
 #endif 

@@ -1,10 +1,10 @@
 #ifndef _VENDA_H_
 #define _VENDA_H_
 
-struct Venda {
+typedef struct {
 	int codigo;
 	const char* CPF;
 	double total;
-}
+} Venda;
 
 #endif 
