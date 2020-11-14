@@ -49,7 +49,34 @@ int main() {
 	int opcao = -1;
 	// enquanto opcao nao for 9 (sair) continua a execucao
 	while (obter_opcao(&opcao) != 9) {
-		std::cout<<"Opcao escolhida: "<<opcao<<std::endl;
+		switch (opcao) {
+			case 1:
+				std::cout<<1<<std::endl;
+				break;
+			case 2:
+				std::cout<<2<<std::endl;
+				break;
+			case 3:
+				std::cout<<3<<std::endl;
+				break;
+			case 4:
+				std::cout<<4<<std::endl;
+				break;
+			case 5:
+				if (cadastrar_cliente() == 1) {
+					std::cout<<"Cadastro Realizado Com Sucesso!"<<std::endl;
+				}
+				break;
+			case 6:
+				std::cout<<6<<std::endl;
+				break;
+			case 7:
+				std::cout<<7<<std::endl;
+				break;
+			case 8:
+				std::cout<<8<<std::endl;
+				break;
+		}
 	}
 	std::cout << "Finalizando..." << std::endl;
 	return 0;
