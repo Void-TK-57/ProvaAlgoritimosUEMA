@@ -45,6 +45,9 @@ int obter_opcao(int* opcao) {
 
 int main() {
 	std::cout << "Bem Vindo." << std::endl;
+	// inicialmente, carrega cliente 
+	int n_clientes = quantidade_clientes_registrados();
+	Cliente** clientes = clintes_registrados(n_clientes);
 	// opcao escolhida pelo usuario 
 	int opcao = -1;
 	// enquanto opcao nao for 9 (sair) continua a execucao
@@ -79,6 +82,13 @@ int main() {
 		}
 	}
 	std::cout << "Finalizando..." << std::endl;
+
+	// deleta vetor de clientes 
+	for (int i = 0; i < n_clientes; i++) {
+		delete clientes[i];
+	}
+	delete[] clientes;
+
 	return 0;
 }
 
