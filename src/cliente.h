@@ -5,18 +5,20 @@
 
 typedef struct {
 	const char* nome;
-	const char* CPF;
+	const char* CPF; // 123.456.789-01
 	const char* endereco;
 } Cliente;
 
-int cadastrar_cliente();
+int cadastrar_cliente(Cliente**, int);
 
 int quantidade_clientes_registrados();
 
-Cliente** clintes_registrados(int); 
+Cliente** clintes_registrados(int);
 
-int cpf_valido(std::string);
+Cliente* procurar_cliente(Cliente**, int);
 
-Cliente* procurar_cliente(Cliente**, int, std::string);
+int alterar_cliente(Cliente**, int);
 
-#endif 
+
+
+#endif
